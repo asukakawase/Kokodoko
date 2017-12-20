@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_old"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ads" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学習結果"
+        android:id="@+id/textView2"
+        android:layout_gravity="top|center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <!---   <Button
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="戻る"
+         android:id="@+id/button"
+         android:layout_gravity="right|top" /> -->
+
+     <com.beardedhen.androidbootstrap.AwesomeTextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:bootstrapBrand="regular"
+         android:textSize="30dp"
+         android:id="@+id/trash"
+         app:fontAwesomeIcon="fa_trash"
+         android:layout_gravity="top|right"
+         android:enabled="true"
+         android:nestedScrollingEnabled="false"
+         android:clickable="true"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="62dp"
+         android:textIsSelectable="false" />
+
+     <com.beardedhen.androidbootstrap.AwesomeTextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:bootstrapBrand="regular"
+         android:textSize="30dp"
+         android:id="@+id/undo"
+         app:fontAwesomeIcon="fa_undo"
+         android:layout_gravity="top|right"
+         android:enabled="true"
+         android:nestedScrollingEnabled="false"
+         android:clickable="true"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="10dp"
+         android:textIsSelectable="false" />
+
+
+     <!---  <Button
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="消す"
+           android:id="@+id/button3"
+           android:layout_gravity="right|top"
+           android:layout_marginRight="55dp" /> -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.58"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1"
+            android:layout_gravity="top|center_vertical" />
+
+    </FrameLayout>
+
+</FrameLayout>

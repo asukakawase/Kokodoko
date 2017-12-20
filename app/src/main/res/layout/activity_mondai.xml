@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    xmlns:bootstrap="http://schemas.android.com/apk/res-auto" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:map="http://schemas.android.com/apk/res-auto"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:id="@+id/map"
+               android:name="com.google.android.gms.maps.SupportMapFragment"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               tools:context="ya.kokodoko.Mondai"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentEnd="true" />
+
+<!--        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|bottom"
+            android:background="#FFFFFF" /> -->
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="211dp"
+            android:layout_height="52dp"
+            android:id="@+id/button"
+            android:height="50dp"
+            android:textStyle="bold"
+            app:bootstrapText="解答"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:bootstrapBrand="primary"
+            android:layout_gravity="center_horizontal|bottom"
+            android:longClickable="false"
+            app:roundedCorners="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

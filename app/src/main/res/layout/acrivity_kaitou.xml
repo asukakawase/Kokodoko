@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framelayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/background2"
+            android:scaleType="centerCrop" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="331dp"
+            android:layout_height="149dp"
+            android:focusable="false"
+            android:onClick="setContentView">
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton1"
+                android:checked="false"
+                android:textSize="25dp"
+                android:layout_marginTop="5dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:checked="false"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"
+                android:layout_weight="0"
+                android:checked="false"
+                android:layout_marginTop="15dp"
+                android:textSize="25dp" />
+
+        </RadioGroup>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="前の画面へ"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:id="@+id/button_back"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="150dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:layout_marginTop="20dp"
+            android:textColor="#fa3527"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="次の問題"
+            android:id="@+id/button_next"
+            android:layout_weight="0.03"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="結果表示"
+            android:id="@+id/button_result"
+            android:layout_weight="0.03"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="答え合わせ"
+            android:id="@+id/button_answercheck"
+            android:layout_weight="0.03"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            android:layout_marginTop="230dp"
+            android:layout_gravity="center_horizontal|top" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:bootstrapBrand="danger"
+            android:textSize="70dp"
+            android:id="@+id/Awesome"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="残り"
+            android:id="@+id/textView3"
+            android:layout_gravity="right|top"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/timer" />
+
+    </FrameLayout>
+
+</LinearLayout>

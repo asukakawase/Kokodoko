@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/title_pic"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:bootstrapBrand="regular"
+               android:textSize="30dp"
+               android:id="@+id/score"
+               app:fontAwesomeIcon="fa_book"
+               android:layout_gravity="top|right"
+               android:enabled="true"
+               android:nestedScrollingEnabled="false"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="52dp"
+            android:textIsSelectable="false" />
+        <Button
+               android:layout_width="277dp"
+               android:layout_height="64dp"
+               android:text="Start"
+               android:id="@+id/Start"
+               android:layout_gravity="center_horizontal|bottom"
+               android:typeface="sans"
+               android:textSize="30dp"
+               android:background="@drawable/border"
+               android:textColor="#ffffff"
+               android:textStyle="bold"
+               android:singleLine="true"
+               android:layout_marginBottom="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kokodoko?"
+            android:id="@+id/title"
+            android:visibility="visible"
+            android:textColor="#FFF"
+            android:textSize="65dp"
+            android:allowUndo="true"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="100dp"
+            android:textIsSelectable="false"
+            android:phoneNumber="false"
+            android:gravity="center" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="regular"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/volume_on"
+            android:layout_gravity="top|right" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_gravity="right|top"
+            android:elegantTextHeight="false"
+            android:background="@drawable/border2" />
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="regular"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/volume_off"
+            android:layout_gravity="top|right" />
+    </FrameLayout>
+
+</LinearLayout>
