@@ -37,12 +37,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <!--<meta-data
+   \   <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCbIT334Mae-snvl3FAA3mryh-7rvI6TLo" />-->
-        <meta-data
+            android:value="AIzaSyCbIT334Mae-snvl3FAA3mryh-7rvI6TLo" />
+      <!--  <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCky-8NtMrdCsd-fDGT5Tr3fDFw9_pfI4U" />
+            android:value="AIzaSyCky-8NtMrdCsd-fDGT5Tr3fDFw9_pfI4U" />-->
     </application>
 
 </manifest>
