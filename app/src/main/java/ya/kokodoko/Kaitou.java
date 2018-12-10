@@ -145,7 +145,7 @@ public class Kaitou extends AppCompatActivity {
     public void ResultDispaly() {
         setContentView(R.layout.activity_result);
 
-        //Retrive Objects of each parts
+        //Retrieve Objects of each parts
         TextView seikai= (TextView) findViewById(R.id.seikai);
         bt_backToStart= (BootstrapButton) findViewById(R.id.button_backStart);
         iv2= (ImageView) findViewById(R.id.imageView3);
@@ -167,9 +167,9 @@ public class Kaitou extends AppCompatActivity {
         globals.iModoruFlag=0;
         globals.lnokori=0L;
         timerText.setText("00");
-        //Disacle the button of "Back"
+        //Disable the button of "Back"
         buttonback.setEnabled(false);
-        //Disacle the button of "Check Answers"
+        //Disable the button of "Check Answers"
         buttonanswer.setEnabled(false);
         // Get Objects for Radio group
         RadioGroup rg = (RadioGroup) findViewById(R.id.radiogroup);
@@ -177,7 +177,7 @@ public class Kaitou extends AppCompatActivity {
         int id = rg.getCheckedRadioButtonId();
         checkedradioButton = (RadioButton) findViewById(id);
 
-        //Set corect radiobutton
+        //Set correct radiobutton
         kaitouradioButton=radio[globals.irandomnum-1];
 
         //Check answer
@@ -188,7 +188,7 @@ public class Kaitou extends AppCompatActivity {
                 }catch (Exception e){}
                 globals.mp1.start();
             }
-            tv1.setText("Correct!!");
+            tv1.setText("正解!!");
             globals.iseikaiNumber++;
             bootstrapText = builder.addFontAwesomeIcon("fa-circle-o").build();
             tv2.setBootstrapText(bootstrapText);
@@ -200,7 +200,7 @@ public class Kaitou extends AppCompatActivity {
                 }catch (Exception e){}
                 globals.mp2.start();
             }
-            tv1.setText("Wrong！！");
+            tv1.setText("不正解！！");
             bootstrapText = builder.addFontAwesomeIcon("fa-times").build();
             tv2.setBootstrapText(bootstrapText);
         }
